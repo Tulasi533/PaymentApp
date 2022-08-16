@@ -1,0 +1,83 @@
+<nav id="main">
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="/transaction">New Transaction</a></li>
+    <li><a href="/history">History</a></li>
+  </ul>
+  <ul class="contact">
+    <li><a href=""><i class="bi bi-facebook"></i></a></li>
+    <li><a href="https://sg.linkedin.com/company/dbs-bank"><i class="bi bi-linkedin"></i></a></li>
+    <li><a href=""><i class="bi bi-telephone-fill"></i></a></li>
+  </ul>
+</nav>
+<div>
+  <div class="row">
+    <div class="ver1 col-md-2">
+      <nav class="ver">
+        <ul class="ver-nav-links">
+          <li><a href="transaction/sender">Sender</a></li>
+          <li><a href="transaction/receiver">Receiver</a></li>
+          <li><a class="active" href="transaction/trans">Transaction</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="start col-md-9">
+      <div class="row">
+        <div class="col-md-8">
+          <form>
+            <div class="f row">
+              <div class="col-md-4">
+                Transfer Type
+              </div>
+              <div class="col-md-8">
+                <select name="ttype">
+                  <option value="Customer" selected>Customer: Non HDFC Bank</option>
+                  <option value="BankTransfer">Bank Transfer: Restrict to HDFC Bank</option>
+                </select>
+              </div>
+            </div>
+            <div class="f row">
+              <div class="col-md-4">
+                Message Code
+              </div>
+              <div class="col-md-8">
+                <select name="mcode">
+                  <option value="v1" selected>CHQB</option>
+                  <option value="v2">CORT</option>
+                </select>
+              </div>
+            </div>
+            <div class="f row">
+              <div class="col-md-4">
+                Amount
+              </div>
+              <div class="col-md-8">
+                <input type="text">
+              </div>
+            </div>
+            <div class="f row">
+              <div class="col-md-4">
+                Transfer Fee
+              </div>
+              <div class="col-md-8">
+                <input type="text">
+              </div>
+            </div>
+            <div class="f row">
+              <div class="col-md-4">
+                Remaining Balance
+              </div>
+              <div class="col-md-8">
+                <input type="text">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" style= "margin-top:20px; padding: 10px; font-weight: bold;">Submit</button>
+          </form>
+        </div>
+        <div class="simg col-md-3">
+          <img class="cimg" src="assets/transaction.png">
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>

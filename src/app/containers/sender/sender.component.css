@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  background-color: #40060e;
+  padding-left: 4px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #eeecdf;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: #40060e;
+}
+
+.nav-links li a.active {
+  background-color: #eeecdf;
+  color: #40060e;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 60%;
+}
+
+.contact li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.contact i {
+  color: #eeecdf;
+  text-decoration: none;
+}
+
+.ver {
+  display: block;
+  align-items: center;
+  background-color: #01566e;
+}
+
+.ver1 {
+  height: 427px;
+  background-color: #01566e;
+}
+
+.ver-nav-links {
+  display: block;
+  text-align: center;
+}
+
+.ver-nav-links li {
+  list-style: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.ver-nav-links a {
+  color: #eeecdf;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.ver-nav-links a:hover:not(.active) {
+  background-color: #01566e;
+}
+
+.ver-nav-links li a.active {
+  background-color: #eeecdf;
+  color: #01566e;
+}
+
+.simg {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  opacity: 0;
+  animation: slider 5s infinite;
+}
+.start {
+  margin: 20px;
+  background-image: url(https://images.unsplash.com/photo-1547127796-06bb04e4b315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJhY2tncm91bmR8ZW58MHx8MHxibGFja3w%3D&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+}
+
+.cimg {
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-55px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-55px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.f {
+  margin-bottom: 20px;
+  color: #eeecdf;
+  font-weight: bold;
+}
