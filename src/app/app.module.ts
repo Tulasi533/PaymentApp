@@ -11,6 +11,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { SenderComponent } from './containers/sender/sender.component';
 import { ReceiverComponent } from './containers/receiver/receiver.component';
 import { TransComponent } from './containers/trans/trans.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,7 +37,11 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
